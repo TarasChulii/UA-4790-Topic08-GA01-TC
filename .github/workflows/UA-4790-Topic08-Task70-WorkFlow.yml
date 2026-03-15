@@ -21,6 +21,7 @@ jobs:
         uses: actions/setup-java@v5
         with:
           java-version: '17'
+          distribution: 'zulu'
 
       - name: Check that Java JDK is installed
         run: "java -version"
