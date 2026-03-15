@@ -4,7 +4,8 @@ name: UA-4790-Topic08-Task70-WorkFlow
 on:
   # Triggers the workflow on push events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches:
+     - main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,7 +28,7 @@ jobs:
       - name: Clone code of application from reposirity
         run: actions/checkout@v6
         with:
-          ref: "main"
+          ref: main
 
       - name: Install Dependencies
         run: 'mvn compile'
